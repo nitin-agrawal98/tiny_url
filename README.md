@@ -1,4 +1,5 @@
 # tiny_url
+
 <h3> This is a project where any long url can be converted to a unique short url which expires after 12 hours</h3>
 <h4>To run project follow below steps:</h4>
 <ul>
@@ -23,3 +24,15 @@
     <li><b>Time to code - 4hrs</b></li>
     <li><b>Time to test - 1hr</b></li>
 </ul>
+
+<h4>DB table</h4>
+<p>Table - URLShortener</p>
+<div>
+<b>Columns:</b> 
+<ul>
+    <li><b>original_url</b> - Stores original urls</li>
+    <li><b>created_date</b> - Stores time of creation</li>
+    <li><b>expiry_date</b> - Stores time of expiry (12 hours greater than creation date in this case)</li>
+    <li><b>shortened_url</b> - It's not a column of database but its calculated based on the pk id</li>
+</ul>
+</div>
